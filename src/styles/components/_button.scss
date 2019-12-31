@@ -1,0 +1,26 @@
+$button-border-radius: 12px;
+
+button {
+  background-color: $dark-gray;
+  border: none;
+  border-radius: $button-border-radius;
+  color: $white;
+  padding: 20px 30px;
+  width: 90%;
+  max-width: 200px;
+  transition: background-color 0.2s ease-out;
+
+  &:focus {
+    outline: none;
+    box-shadow: 0 0 8px #0dbb9c, 0 0 1px #0dbb9c;
+  }
+
+  &:hover {
+    background-color: lighten($dark-gray, 9%);
+  }
+
+  &:disabled {
+    background-color: desaturate($dark-gray, 100%);
+    opacity: 0.4;
+  }
+}
