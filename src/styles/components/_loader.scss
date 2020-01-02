@@ -1,0 +1,56 @@
+$gradient-angle: 90deg;
+$loader-color1: $blue;
+$loader-color2: rgba($blue, 0.15);
+$loader-height: 5px;
+
+.loader {
+  margin: 20px 0;
+  display: block;
+  height: $loader-height;
+  width: 100%;
+  max-width: 264px;
+  border-radius: $loader-height;
+  background: linear-gradient($gradient-angle, $blue, rgba($blue, 0.1), $blue);
+  animation: gradientAnimation 2.5s linear infinite,
+    glowAnimation 2.5s linear infinite;
+  background-size: 200%;
+}
+
+@keyframes glowAnimation {
+  0% {
+    box-shadow: 0 0 20px rgba($blue, 0.6);
+    opacity: 0.9;
+  }
+  25% {
+    box-shadow: 0 0 15px rgba($blue, 0.3);
+    opacity: 0.5;
+  }
+
+  50% {
+    box-shadow: 0 0 15px rgba($blue, 0.6);
+    opacity: 0.6;
+  }
+
+  75% {
+    box-shadow: 0 0 25px rgba($blue, 0.8);
+    opacity: 1;
+  }
+
+  100% {
+    box-shadow: 0 0 20px rgba($blue, 0.6);
+    opacity: 0.9;
+  }
+}
+
+@keyframes gradientAnimation {
+  0% {
+    background-position: 100% 50%;
+  }
+  50% {
+    background-position: 0% 50%;
+  }
+
+  100% {
+    background-position: -100% 50%;
+  }
+}

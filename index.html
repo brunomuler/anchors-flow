@@ -20,15 +20,56 @@
     <div class="wrapper">
       <div class="title">How would you like to add pesos?</div>
 
-      <div class="title--small">How would you like to add pesos?</div>
+      <div class="title title--small">How would you like to add pesos?</div>
+
+      <div class="select-list">
+        <div class="select-list__item is-selected">
+          <div class="select-list__icon">
+            <img src="<%= require('./src/assets/icon-bank.svg') %>" alt="" />
+          </div>
+          <div class="select-list__content">
+            <span class="select-list__title">Bank Transfer</span>
+            <span class="select-list__description"
+              >Processing time: 2˜3 days</span
+            >
+            <span class="select-list__description">Fee: $2.00</span>
+          </div>
+        </div>
+
+        <div class="select-list__item">
+          <div class="select-list__icon">
+            <img src="<%= require('./src/assets/icon-card.svg') %>" alt="" />
+          </div>
+          <div class="select-list__content">
+            <span class="select-list__title">Credit or Debit Card</span>
+            <span class="select-list__description"
+              >Processing time: 2˜3 days</span
+            >
+            <span class="select-list__description">Fee: $2.00</span>
+          </div>
+        </div>
+
+        <div class="select-list__item">
+          <div class="select-list__icon">
+            <img src="<%= require('./src/assets/icon-cash.svg') %>" alt="" />
+          </div>
+          <div class="select-list__content">
+            <span class="select-list__title">Cash Deposit</span>
+            <span class="select-list__description"
+              >Processing time: 2˜3 days</span
+            >
+            <span class="select-list__description">Fee: $2.00</span>
+          </div>
+        </div>
+      </div>
 
       <input type="number" />
 
       <input type="text" placeholder="email@domain.com" />
 
-      <button>Next</button>
+      <button class="button">Next</button>
 
-      <button disabled>Next</button>
+      <button class="button" disabled>Next</button>
 
       <div class="radio-group">
         <input type="radio" name="gender" value="male" id="male" />
@@ -80,6 +121,49 @@
 
       <div class="select-list">
         <div class="select-list__item"></div>
+      </div>
+
+      <select required>
+        <option value="">Choose your bank...</option>
+        <option value="capital-one">Capital One</option>
+        <option value="chase">Chase</option>
+        <option value="wells-fargo">Wells Fargo</option>
+      </select>
+
+      <div class="loader"></div>
+
+      <div class="card">
+        <div class="info-list info-list--line">
+          <div class="info-item">
+            <div class="info-label">Name</div>
+            <div class="info-value">John</div>
+          </div>
+          <div class="info-item">
+            <div class="info-label">Age</div>
+            <div class="info-value">50</div>
+          </div>
+          <div class="info-item">
+            <div class="info-label">Email</div>
+            <div class="info-value">email@domain.com</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="card card--dark">
+        <div class="info-list info-list--line">
+          <div class="info-item">
+            <div class="info-label">Name</div>
+            <div class="info-value">John</div>
+          </div>
+          <div class="info-item">
+            <div class="info-label">Age</div>
+            <div class="info-value">50</div>
+          </div>
+          <div class="info-item">
+            <div class="info-label">Email</div>
+            <div class="info-value">email@domain.com</div>
+          </div>
+        </div>
       </div>
     </div>
   </body>

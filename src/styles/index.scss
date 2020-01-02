@@ -1,15 +1,22 @@
 @import "variables.scss";
 
+@import "layout/layout.scss";
+
 @import "components/button.scss";
 @import "components/radio.scss";
 @import "components/select.scss";
+@import "components/select-list.scss";
 @import "components/text-input.scss";
 @import "components/title.scss";
 @import "components/text.scss";
 @import "components/info-list.scss";
+@import "components/card.scss";
+@import "components/loader.scss";
 
 html {
-  background-image: linear-gradient($gradient-top, $gradient-bottom);
+  background-color: $gradient-top;
+  background-image: linear-gradient(to bottom, $gradient-top, $gradient-bottom);
+  background-attachment: fixed;
 }
 html,
 body {
@@ -24,24 +31,7 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
-.wrapper {
-  width: 100%;
-  margin: 0 20px;
-}
-
-input[type="select"] {
-}
-
-.select-list {
-}
-
-.select-list__item {
-}
-
 .price-breakdown {
-}
-
-.loader {
 }
 
 .centered-number {

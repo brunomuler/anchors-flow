@@ -3,16 +3,20 @@ $gradient-bottom: #1a1b22;
 
 $white: #ffffff;
 
-$dark-gray: #080711; //100%
+$dark-gray: #09090d; //100%
+
 $gray-30: rgba($dark-gray, 0.3); //30%
 $light-gray: #727b84;
 $lightest-gray: #94a0ac;
 
+// $var1: #0b0a17;
+// $var2: #0d0b1a;
+// $var3: #06050b;
+
 $green: #0dbb9c;
+$blue: #33e1ff;
 
 $main-typeface: "Cabin", sans-serif;
 $regular-weight: 400;
 $medium-weight: 500;
 $bold-weight: 700;
-
-$default-transition: "0.3s ease-out";

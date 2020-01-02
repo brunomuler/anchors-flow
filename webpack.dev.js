@@ -86,6 +86,11 @@ module.exports = {
       template: "./index2.html",
       filename: "index2.html",
       inject: true
+    }),
+    new HtmlWebpackPlugin({
+      template: "./index3.html",
+      filename: "index3.html",
+      inject: true
     })
   ]
 };

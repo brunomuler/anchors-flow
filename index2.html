@@ -17,6 +17,65 @@
     />
   </head>
   <body>
-    <div class="wrapper"></div>
+    <div class="wrapper">
+      <div class="screen-vertical">
+        <div class="screen-content">
+          <div class="title">How would you like to add pesos?</div>
+
+          <div class="select-list">
+            <div class="select-list__item is-selected">
+              <div class="select-list__icon">
+                <img
+                  src="<%= require('./src/assets/icon-bank.svg') %>"
+                  alt=""
+                />
+              </div>
+              <div class="select-list__content">
+                <span class="select-list__title">Bank Transfer</span>
+                <span class="select-list__description"
+                  >Processing time: 2˜3 days</span
+                >
+                <span class="select-list__description">Fee: $2.00</span>
+              </div>
+            </div>
+
+            <div class="select-list__item">
+              <div class="select-list__icon">
+                <img
+                  src="<%= require('./src/assets/icon-card.svg') %>"
+                  alt=""
+                />
+              </div>
+              <div class="select-list__content">
+                <span class="select-list__title">Credit or Debit Card</span>
+                <span class="select-list__description"
+                  >Processing time: 2˜3 days</span
+                >
+                <span class="select-list__description">Fee: $2.00</span>
+              </div>
+            </div>
+
+            <div class="select-list__item">
+              <div class="select-list__icon">
+                <img
+                  src="<%= require('./src/assets/icon-cash.svg') %>"
+                  alt=""
+                />
+              </div>
+              <div class="select-list__content">
+                <span class="select-list__title">Cash Deposit</span>
+                <span class="select-list__description"
+                  >Processing time: 2˜3 days</span
+                >
+                <span class="select-list__description">Fee: $2.00</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="screen-action">
+          <button class="button">Continue</button>
+        </div>
+      </div>
+    </div>
   </body>
 </html>
