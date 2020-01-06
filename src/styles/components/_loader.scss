@@ -4,7 +4,8 @@ $loader-color2: rgba($blue, 0.15);
 $loader-height: 5px;
 
 .loader {
-  margin: 20px 0;
+  margin: 20px 0 30px 0;
+  align-self: center;
   display: block;
   height: $loader-height;
   width: 100%;

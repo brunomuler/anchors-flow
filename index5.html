@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>anchor-flow</title>
+
+    <!-- Mobile header color for Chrome, Firefox OS and Opera -->
+    <meta name="theme-color" content="#ff4970" />
+    <!-- Mobile header color Windows Phone -->
+    <meta name="msapplication-navbutton-color" content="#ff4970" />
+    <!-- Mobile header color for iOS Safari (supports black, black-translucent or default) -->
+    <meta name="apple-mobile-web-app-status-bar-style" content="default" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Cabin:400,500,700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="screen-vertical">
+        <div class="screen-content">
+          <div class="header">
+            <img
+              src="<%= require('./src/assets/anchor-lockup.svg') %>"
+              alt=""
+            />
+          </div>
+          <div class="loader l-margin-bottom-large"></div>
+          <h2 class="title title--align-center">
+            Your 500 pesos deposit is being processed
+          </h2>
+          <div class="card-shadow-wrapper">
+            <div class="card card--dark card--square-bottom">
+              <h2 class="title">Summary</h2>
+              <div class="info-list info-list--space-between">
+                <div class="info-item">
+                  <div class="info-label">Amount</div>
+                  <div class="info-value">$500.00</div>
+                </div>
+
+                <div class="info-item">
+                  <div class="info-label">Fee</div>
+                  <div class="info-value">$2.00</div>
+                </div>
+
+                <div class="info-item info-item--highlight">
+                  <div class="info-label">Total</div>
+                  <div class="info-value">$502.00</div>
+                </div>
+              </div>
+            </div>
+            <div class="card card--square-top">
+              <div class="info-list info-list--line">
+                <div class="info-item">
+                  <div class="info-label">Started</div>
+                  <div class="info-value">5/19/2020 09:45am</div>
+                </div>
+              </div>
+              <p class="status-label">Pending...</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

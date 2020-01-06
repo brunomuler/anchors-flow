@@ -2,3 +2,10 @@ p {
   font-size: 15/16 + rem;
   color: $lightest-gray;
 }
+
+.status-label {
+  margin: 20px 0 10px 0;
+  text-align: center;
+  color: $blue;
+  opacity: 0.6;
+}

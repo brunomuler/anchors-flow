@@ -1,7 +1,10 @@
 .info-list {
+  max-width: 100%;
+  word-break: break-all;
+
   &.info-list--line {
     .info-item {
-      margin: 15px 0;
+      padding: 7px 0;
       display: flex;
       flex-direction: row;
     }
@@ -13,10 +16,42 @@
       font-size: 14/16 + rem;
     }
   }
+
+  &.info-list--space-between {
+    .info-item {
+      padding: 7px 0;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-between;
+    }
+    .info-label {
+      font-size: 15/16 + rem;
+      padding-bottom: 0;
+    }
+
+    .info-value {
+      font-size: 15/16 + rem;
+      color: $lightest-gray;
+    }
+  }
 }
 
 .info-item {
-  margin: 25px 0;
+  padding: 12px 0;
+
+  &.info-item--highlight {
+    border-top: 1px solid rgba($white, 0.1);
+    line-height: 1.5;
+    .info-label {
+      color: $white;
+    }
+
+    .info-value {
+      font-size: 23/16 + rem;
+      color: $white;
+    }
+  }
 }
 
 .info-label {

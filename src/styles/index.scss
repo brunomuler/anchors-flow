@@ -12,11 +12,20 @@
 @import "components/info-list.scss";
 @import "components/card.scss";
 @import "components/loader.scss";
+@import "components/form.scss";
+@import "components/label.scss";
+@import "components/header.scss";
+@import "components/currency-value.scss";
+@import "components/link.scss";
 
 html {
   background-color: $gradient-top;
   background-image: linear-gradient(to bottom, $gradient-top, $gradient-bottom);
   background-attachment: fixed;
+
+  * {
+    box-sizing: border-box;
+  }
 }
 html,
 body {

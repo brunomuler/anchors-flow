@@ -1,9 +1,15 @@
 .title {
   font-size: 23/16 + rem;
   font-weight: $medium-weight;
+  margin: 0;
   margin-bottom: 30px;
+}
+
+.title--align-center {
+  text-align: center;
 }
 
 .title--small {
   font-size: 18/16 + rem;
+  margin-bottom: 20px;
 }

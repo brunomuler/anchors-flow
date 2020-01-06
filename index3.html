@@ -20,18 +20,36 @@
     <div class="wrapper">
       <div class="screen-vertical">
         <div class="screen-content">
-          <div class="title title--small">Enter your bank information?</div>
+          <div class="header">
+            <img
+              src="<%= require('./src/assets/anchor-lockup.svg') %>"
+              alt=""
+            />
+          </div>
+          <h2 class="title title--small">Enter your bank information?</h2>
 
-          <select required>
-            <option value="">Choose your bank...</option>
-            <option value="capital-one">Capital One</option>
-            <option value="chase">Chase</option>
-            <option value="wells-fargo">Wells Fargo</option>
-          </select>
+          <form class="form" action="">
+            <label for="" class="label">Bank name</label>
+            <select required>
+              <option value="">Choose your bank...</option>
+              <option value="capital-one">Capital One</option>
+              <option value="chase">Chase</option>
+              <option value="wells-fargo">Wells Fargo</option>
+            </select>
 
-          <input type="text" placeholder="email@domain.com" />
+            <label for="" class="label">Branch</label>
+            <input type="text" placeholder="XXX-XX" />
 
-          <input type="text" placeholder="email@domain.com" />
+            <label for="" class="label">Checking account</label>
+            <input type="text" placeholder="XXXXX-XXX-XXXX" />
+
+            <label for="" class="label">Email</label>
+            <input
+              type="email"
+              value="invalid@email."
+              placeholder="email@domain.com"
+            />
+          </form>
         </div>
 
         <div class="screen-action">

@@ -1,9 +1,14 @@
 $card-border-radius: 12px;
 
 .card {
-  padding: 20px;
+  padding: 25px 20px;
   border-radius: $card-border-radius;
-  background: rgba($dark-gray, 0.3);
+  background: $card-color;
+}
+
+.card-shadow-wrapper {
+  border-radius: $card-border-radius;
+  box-shadow: 0 10px 35px rgba($dark-gray, 0.3);
 }
 
 .card--dark {
@@ -12,4 +17,12 @@ $card-border-radius: 12px;
     lighten($dark-gray, 2%),
     lighten($dark-gray, 5%)
   );
+}
+
+.card--square-bottom {
+  border-radius: $card-border-radius $card-border-radius 0 0;
+}
+
+.card--square-top {
+  border-radius: 0 0 $card-border-radius $card-border-radius;
 }

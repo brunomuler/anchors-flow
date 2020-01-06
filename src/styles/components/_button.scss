@@ -8,7 +8,7 @@ $button-border-radius: 12px;
   color: $white;
   padding: 20px 30px;
   width: 90%;
-  max-width: 200px;
+  max-width: 250px;
   transition: background-color 0.2s ease-out;
 
   &:focus {
@@ -23,5 +23,9 @@ $button-border-radius: 12px;
   &:disabled {
     background-color: desaturate($dark-gray, 100%);
     opacity: 0.4;
+  }
+
+  &:active {
+    background-color: $dark-gray;
   }
 }
