@@ -1,23 +1,15 @@
-
-
 # Anchors flow components styles
-
 
 ## Requirements
 
-* [Node](https://nodejs.org) > 7.6
+- [Node](https://nodejs.org) > 7.6
 
 ## Usage
 
 Install npm dependencies
 
 ```sh
- npm install 
-```
-
-Run the kickstart command
-```sh
-npm run kickstart
+ npm install
 ```
 
 **After the project has been kickstarted**
@@ -35,6 +27,7 @@ npm run build
 ```
 
 To preview the production build
+
 ```sh
 npm run preview
 ```
