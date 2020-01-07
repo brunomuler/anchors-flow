@@ -26,9 +26,12 @@ $gradient-top: #303346;
 $gradient-bottom: #1a1b22;
 $error-color: $red;
 
+/* Link */
+$link-color: $blue;
+
 /* Card */
 $card-color: $gray-30;
-$dark-card-color: $dark-gray;
+$secondary-card-gradient1: $dark-gray;
 
 $text-color: $white;
 
@@ -38,7 +41,6 @@ $input-main-color: $white;
 $input-focus-color: $blue;
 $input-color: $gray-30; //used for text input, radio and select components
 $input-placeholder-color: $light-gray;
-$link-color: $blue;
 
 /* Radio */
 $radio-bullet-color: $light-gray;
