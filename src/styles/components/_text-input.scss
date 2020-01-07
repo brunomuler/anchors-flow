@@ -6,22 +6,23 @@ input[type="email"] {
   background-color: $input-color;
   border-radius: $input-border-radius;
   border: none;
-  color: $white;
+  color: $input-main-color;
   padding: 15px 18px;
   outline: none;
 
   &:focus {
-    box-shadow: 0 0 8px rgba($blue, 0.6), 0 0 1px $blue;
+    box-shadow: 0 0 8px rgba($input-focus-color, 0.6),
+      0 0 1px $input-focus-color;
   }
 
   &:invalid {
-    color: $red;
-    box-shadow: 0 0 3px rgba($red, 0.6), 0 0 1px $red;
+    color: $error-color;
+    box-shadow: 0 0 3px rgba($error-color, 0.6), 0 0 1px $error-color;
   }
 }
 
 ::placeholder {
-  color: $light-gray;
+  color: $input-placeholder-color;
 }
 
 .currency-input {

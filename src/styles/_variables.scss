@@ -14,21 +14,37 @@ $regular-weight: 400;
 $medium-weight: 500;
 $bold-weight: 700;
 
-// Theme colors
+/*
+*
+*
+Theme colors
+*
+*
+*/
 
 $gradient-top: #303346;
 $gradient-bottom: #1a1b22;
+$error-color: $red;
 
+/* Card */
 $card-color: $gray-30;
-//$dark-card-color
+$dark-card-color: $dark-gray;
 
-//$text-color
-//$contrast-color
+$text-color: $white;
+
+/* Input and Form */
+$input-border-radius: 12px;
+$input-main-color: $white;
+$input-focus-color: $blue;
 $input-color: $gray-30; //used for text input, radio and select components
+$input-placeholder-color: $light-gray;
 $link-color: $blue;
+
+/* Radio */
+$radio-bullet-color: $light-gray;
+$radio-bg-color: $input-color;
+
 //$text-secondary-color
 //button color
-
-//error-color
 
 //accent-color
